@@ -90,4 +90,6 @@ Calculates the quartet distance (QD) and the generalized quartet distance (GQD)
               
 ------------------------------
 
-library.py    A collection of useful functions
+library.py
+
+A collection of useful functions
