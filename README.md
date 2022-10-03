@@ -26,13 +26,10 @@ Scripts (in order of execution)
 
 frequency.py  [ FILE_METADATA  [ NUMBER_OF_ITERATIONS ] ]
 
-
 Reads the dataset (via FILE_METADATA) and calculates:
-
 
 - the percentage frequency of NLD distribution for pairs of words with different concepts
               with NUMBER_OF_ITERATIONS random pairs (output: tabular/frequency_NLD_different_concepts.txt)
-
 
 - the percentage frequency of NLD distribution for pairs of words with the same concepts
               (output: tabular/frequency_NLD_same_concepts.txt)
@@ -41,9 +38,7 @@ Reads the dataset (via FILE_METADATA) and calculates:
 
 threshold.py  [ FILE_METADATA  [ MIN_FREQUENCY ] ]
 
-
 Reads the dataset (via FILE_METADATA) and:
-
 
 - sums tabular/frequency_NLD_different_concepts.txt on appropriate NLD intervals of, at least,
               MIN_FREQUENCY absolute frequence (output: tabular/intervals_NLD_different_concepts.txt)
@@ -90,7 +85,7 @@ Reads the tsv/lexstat.tsv dataset and runs the PSV algorithm with threshold = TH
 
 quartets.py   MEG_FILE  REF_MEG_FILE
 
-              Calculates the quartet distance (QD) and the generalized quartet distance (GQD)
+Calculates the quartet distance (QD) and the generalized quartet distance (GQD)
               of phylogenetic tree in MEG_FILE with respect to phylogenetic tree in REF_MEG_FILE
               
 ------------------------------
