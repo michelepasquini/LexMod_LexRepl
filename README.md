@@ -6,7 +6,7 @@ by Michele Pasquini, Maurizio Serva and Davide Vergni
 Requires LingPy 2.6.9 package (https://lingpy.org/)
 
 
-Directories
+Directories  (in alphabetic order)
 ---------------------------------------------------------------------------
 .\cldf    (intent: input)   datasets in cldf format
 
@@ -64,9 +64,9 @@ Reads the dataset (via FILE_METADATA), run the PSV algorithm with threshold = TH
 - compares modifications distance matrix and replacements distance matrix
               (output: tabular/DR_vs_DM.txt)
 
-- exports some genealogical distances (T_NLD, T_M, T_R, T_RM, see the paper) in meg format
+- exports some genealogical distances (T_NLD, T_M, T_R, T_RM, see the paper) in MEGA format
               to build up the phylogenetic trees with MEGA softwate (https://www.megasoftware.net)
-              (output: meg/T_NLD.meg ; meg/T_M.meg ; meg/T_R.meg ; meg/T_RM.meg)
+              (output: meg/T_NLD.meg ; meg/T_M.meg ; meg/T_R.meg ; meg/T_MR.meg)
 
 ------------------------------
 
@@ -81,11 +81,18 @@ comparison.py [ THRESHOLD ]
 
 Reads the tsv/lexstat.tsv dataset and runs the PSV algorithm with threshold = THRESHOLD; then:
 
-- exports the genealogical distances T_R_infomap (output: meg/T_R_infomap.meg); then
+- exports the genealogical distances T_R_infomap (output: meg/T_R_infomap.meg);
 
 - calculates the B-cubed F-scores (Amigó et al. 2009) to compare the two cognate detection
       	      algorithms (Lexstat-Infomap and PSV)
 
+------------------------------
+
+quartets.py   MEG_FILE  REF_MEG_FILE
+
+              Calculates the quartet distance (QD) and the generalized quartet distance (GQD)
+              of phylogenetic tree in MEG_FILE with respect to phylogenetic tree in REF_MEG_FILE
+              
 ------------------------------
 
 library.py    A collection of useful functions
